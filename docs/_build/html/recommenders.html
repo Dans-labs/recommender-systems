@@ -1,0 +1,355 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Recommender Systems &mdash; Recommender Systems 0.7.5 documentation</title>
+  
+
+  
+  
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  
+  
+
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:'./',
+        VERSION:'0.7.5',
+        COLLAPSE_INDEX:false,
+        FILE_SUFFIX:'.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+      <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+    <link rel="top" title="Recommender Systems 0.7.5 documentation" href="index.html"/>
+        <link rel="next" title="Data Mining" href="datamining.html"/>
+        <link rel="prev" title="Recommender Systems" href="index.html"/> 
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-nav-search">
+        <a href="index.html" class="icon icon-home"> Recommender Systems</a>
+        <form id ="rtd-search-form" class="wy-form" action="search.html" method="get">
+  <input type="text" name="q" placeholder="Search docs" />
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix">
+        
+        
+            <ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="">Recommender Systems</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#author">Author</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#introduction">Introduction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#description">Description</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#methodology">Methodology</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#references">References</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="datamining.html">Data Mining</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="datamining.html#references">References</a></li>
+</ul>
+</li>
+</ul>
+
+        
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top">
+        <i data-toggle="wy-nav-top" class="icon icon-reorder"></i>
+        <a href="/">Recommender Systems</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <ul class="wy-breadcrumbs">
+  <li><a href="index.html">Docs</a> &raquo;</li>
+  <li><a href="">Recommender Systems</a></li>
+    <li class="wy-breadcrumbs-aside">
+      
+        <a href="_sources/recommenders.txt" rel="nofollow"> View page source</a>
+      
+    </li>
+</ul>
+<hr/>
+
+          
+  <div class="section" id="recommender-systems">
+<h1>Recommender Systems<a class="headerlink" href="#recommender-systems" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="author">
+<h2>Author<a class="headerlink" href="#author" title="Permalink to this headline">¶</a></h2>
+<p>Eko Indarto <a class="reference internal" href="#ei"><em>(ref)</em></a>.</p>
+<p>Supervisor: Dirk Roorda <a class="reference internal" href="#dr"><em>(ref)</em></a></p>
+<p>Supervisor: Andrea Scharnhorst <a class="reference internal" href="#as"><em>(ref)</em></a></p>
+</div>
+<div class="section" id="introduction">
+<h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h2>
+<p>The web has grown to be a visible part of the global-village;
+and its emergences as an important apparatus to break the diverse barriers across physical-variations and global-boundaries.
+The embracement of the web into our daily life activities in this contemporary period has
+become almost inevitable and quite numbers of populace rely on the web for different purpose
+range from placing on their view and read others view while also commenting on such views,
+e-learning, e-banking, e-library and e-commerce etc.
+The number of available documents on the web is enough to improve the diverse ways of educating and research need of the public now and then.
+The trail to learning on the web only necessitates knowing the best-way to explore and progress than reinventing the wheel for previously studied-aspect of knowledge.</p>
+<p>In the future of internet, whose contours gradually become visible,
+these two developments - Big Data and The Internet of Things -are inextricably linked in a large and complex ecosystem.
+In this system, data is collected on the basis of our visited web pages, our activities in social networks,
+smart phones and through the many sensors of the physical world. It is this stream that forms the basis of Big Data.
+A data stream (or flow of different streams) basically,
+without interpretation, has less value, but based on analysis creates information that we can use,
+so the data becomes valuable.
+The outcome of the analysis - such as the Google car can also be converted directly in action without human intervention:
+a right turn or slow down for crossing cyclists (Vanderbilt, 2012).
+This internet is a perpetual motion machine of input and output which data is the raw material.</p>
+<p>As more and more products and services have data as a vital component,
+the impact of this system become bigger and penetrates capillaries of our society.
+Not for nothing the U.S. government recently has announced around $ 200 million to invest in research on Big Data (Kalil, 2012).
+Therefore, it is important to better understand how the operation of this system
+works, the role of stakeholders and technologies and identifies its developments.</p>
+<p>The way that this system is developed also raises important questions regarding the innovative power of the future internet.
+As described by Wheeler (2012) in his presentation, the web innovation shows how the development of the Internet has experienced in several phases.</p>
+<img alt="_images/Future-internet.png" src="_images/Future-internet.png" />
+<hr class="docutils" />
+<p>todo: huge amount of data - Finding desired information from large data set is a difficult problem.</p>
+<hr class="docutils" />
+<p>What are the strategy to solve decision making problem?
+Recommender Systems (RSs) are software tools and techniques providing suggestions for items to be of use to a user.
+It helps a user to make a decision.</p>
+<p>In general, there are three types of recommender system:</p>
+<ul class="simple">
+<li>Collaborative recommender system is a system that produces its result based on past ratings of users with similar preferences</li>
+<li>Content based recommender system is a system that produces its result based on the similarity of the content of the documents or items.</li>
+<li>Knowledge based recommender system is a system that produces its result based on additional and means–end knowledge.</li>
+</ul>
+</div>
+<div class="section" id="description">
+<h2>Description<a class="headerlink" href="#description" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="methodology">
+<h2>Methodology<a class="headerlink" href="#methodology" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="system-design-framework">
+<h3>System Design Framework<a class="headerlink" href="#system-design-framework" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="system-description">
+<h3>System Description<a class="headerlink" href="#system-description" title="Permalink to this headline">¶</a></h3>
+<img alt="_images/Process-flow.png" src="_images/Process-flow.png" />
+</div>
+<div class="section" id="software-architecture">
+<h3>Software Architecture<a class="headerlink" href="#software-architecture" title="Permalink to this headline">¶</a></h3>
+<img alt="_images/System-architecture.png" src="_images/System-architecture.png" />
+<div class="section" id="approach">
+<h4>Approach<a class="headerlink" href="#approach" title="Permalink to this headline">¶</a></h4>
+<p>First a few general remarks as to the approach we have chosen.</p>
+</div>
+<div class="section" id="implementation">
+<h4>Implementation<a class="headerlink" href="#implementation" title="Permalink to this headline">¶</a></h4>
+</div>
+<div class="section" id="setting-up-the-development-environment">
+<h4>Setting up the development environment<a class="headerlink" href="#setting-up-the-development-environment" title="Permalink to this headline">¶</a></h4>
+<p>Discovering the best tools, and learning how to use them effectively, takes time and effort.
+While that effort may be duly rewarded, spending weeks looking for and trying to configure software can be frustrating.
+This chapter describes setting up of our development enviroment.</p>
+<div class="section" id="git">
+<h5>Git<a class="headerlink" href="#git" title="Permalink to this headline">¶</a></h5>
+<p>Git <a class="reference internal" href="#lit1"><em>(ref)</em></a> is an open source, distributed version control system.
+It is an extremely powerful tool and easy easy to start using.
+The latest version can be found on <a class="reference external" href="https://code.google.com/p/git-core/">https://code.google.com/p/git-core/</a></p>
+<p><strong>Installing Git</strong></p>
+<p><strong>Installing Git on CentOS</strong></p>
+<p>This section describes GIT installation on CentOS 5.6</p>
+<ol class="arabic">
+<li><p class="first">Let’s start by logging into the server by using SSH.
+Login as root, for example a user with sudo access, is needed.
+First, we need to install a few dependencies Git needs. We can do this easily using yum:</p>
+<div class="highlight-python"><pre>yum -y install zlib-devel openssl-devel cpio expat-devel gettext-devel</pre>
+</div>
+</li>
+<li><p class="first">Download the latest Git source code to the /usr/local/src directory and untar it:</p>
+<div class="highlight-python"><pre>wget wget http://git-core.googlecode.com/files/git-1.7.12.2.tar.gz
+tar xvfz git-1.7.12.2.tar.gz</pre>
+</div>
+</li>
+<li><p class="first">Now we need to configure a makefile for the targeting system, compile the code and install it:</p>
+<div class="highlight-python"><pre>./configure
+make
+make install</pre>
+</div>
+</li>
+<li><p class="first">Test it. Check it to make sure the installation is a success.
+Change to the home directory, create a new directory, and initialize it as a Git repository:</p>
+<div class="highlight-python"><pre>cd
+mkdir git-test
+cd git-test
+git init</pre>
+</div>
+</li>
+</ol>
+<p>A similar output message is shown by succes installation:</p>
+<div class="highlight-python"><pre>Initialized empty Git repository in /home/ekoi/git-test/.git/</pre>
+</div>
+<p><strong>Installing Git on Ubuntu</strong></p>
+<p>This section describes Git installation on Ubuntu 12.04.
+Installing Git with apt-get is a quick and easy process:</p>
+<div class="highlight-python"><pre>sudo apt-get install git</pre>
+</div>
+<p>However, it is generally a good idea to install it from the source:</p>
+<ol class="arabic">
+<li><p class="first">Download the most recent packages:</p>
+<div class="highlight-python"><pre>sudo apt-get update</pre>
+</div>
+</li>
+<li><p class="first">Download the required dependancies:</p>
+<div class="highlight-python"><pre>sudo apt-get install libcurl4-gnutls-dev libexpat1-dev gettext libz-dev libssl-dev build-essential</pre>
+</div>
+</li>
+</ol>
+<p>Next, see the step 3 and 4 above.</p>
+<p><strong>Installing Git on Mac</strong></p>
+<p>To handle the installation on mac, MacPort or Homebrew can be used.
+The easiest way is by downloaded the dmg file from <a class="reference external" href="http://code.google.com/p/git-osx-installer/downloads/list">http://code.google.com/p/git-osx-installer/downloads/list</a></p>
+<p><strong>Installing Git on the Server</strong></p>
+<p>To run Git server, choosen which communication protocol is needed.
+Git provides four major network protocols: Local, Secure Shell (SSH), Git, and HTTP.
+The following steps describe installing Git server which the SSH protocol is chosen.</p>
+<ol class="arabic">
+<li><p class="first">Create a user:</p>
+<div class="highlight-python"><pre>sudo adduser git
+su git
+cd
+mkdir .ssh
+mkdir repos</pre>
+</div>
+</li>
+</ol>
+<p>(the location of all git repositories)</p>
+<ol class="arabic simple" start="2">
+<li>Add user ssh public key</li>
+</ol>
+<p>Each user in the system must generate public key if they don’t already have one and add it to the authorized_keys file of git.
+For example, a key is received by mail, saved it to temporary file and append it to authorized_keys file:</p>
+<div class="highlight-python"><pre>cat /tmp/id_rsa.eko.pub &gt;&gt; ~/.ssh/authorized_keys</pre>
+</div>
+<ol class="arabic simple" start="3">
+<li>Restrict the &#8220;git&#8221; user activity</li>
+</ol>
+<p>To ensure that the <em>git</em> user  can  only use the SSH connection to doing Git activities ,
+a limited shell tool that comes with Git can be used.
+So, the <em>git</em> user cannot have normal shell access to the server.
+So, the “git” user can only use push and pull Git repositories and cannot shell onto the machine.
+To use this, specify  <tt class="docutils literal"><span class="pre">git-shell</span></tt> instead of default shell by editing the <tt class="docutils literal"><span class="pre">/etc/passwd</span></tt> file:</p>
+<div class="highlight-python"><pre>sudo vi /etc/passwd</pre>
+</div>
+<p>At the bottom, there is a line that looks something like:</p>
+<div class="highlight-python"><pre>git:x:1003:1004:DANS GIT SERVER,,,:/home/git:/bin/sh</pre>
+</div>
+<p>Change to:</p>
+<div class="highlight-python"><pre>git:x:1003:1004:DANS GIT SERVER,,,:/home/git:/usr/bin/git-shell</pre>
+</div>
+<p><strong>Working with Git (Methodology)</strong></p>
+<p>There is no standard way working on GIT, however,
+we are using the following workflow as stated on &#8220;Pragmatic Guide To GIT&#8221; (Swicegood, 2010) <a class="reference internal" href="#lit2"><em>(ref)</em></a></p>
+<img alt="_images/Git_workflow.png" src="_images/Git_workflow.png" />
+</div>
+</div>
+<div class="section" id="eclipse">
+<h4>Eclipse<a class="headerlink" href="#eclipse" title="Permalink to this headline">¶</a></h4>
+</div>
+<div class="section" id="hadoop">
+<h4>Hadoop<a class="headerlink" href="#hadoop" title="Permalink to this headline">¶</a></h4>
+</div>
+<div class="section" id="mahout">
+<h4>Mahout<a class="headerlink" href="#mahout" title="Permalink to this headline">¶</a></h4>
+</div>
+<div class="section" id="walrus">
+<h4>Walrus<a class="headerlink" href="#walrus" title="Permalink to this headline">¶</a></h4>
+</div>
+</div>
+</div>
+<div class="section" id="references">
+<h2>References<a class="headerlink" href="#references" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="people">
+<h3>People<a class="headerlink" href="#people" title="Permalink to this headline">¶</a></h3>
+<p id="ei"><a class="reference external" href="http://www.dans.knaw.nl/en/content/contact/staff-members/eko-indarto">Eko Indarto</a>, developer at <a class="reference external" href="http://www.dans.knaw.nl/en">DANS</a></p>
+<p><a class="reference external" href="http://www.dans.knaw.nl/en/content/contact/staff-members/dirk-roorda">Dirk Roorda</a>, researcher at <a class="reference external" href="http://www.dans.knaw.nl/en">DANS</a></p>
+<p><a class="reference external" href="http://dans.knaw.nl/content/contact/andrea-scharnhorst">Andrea Scharnhorst</a>, senior researcher at <a class="reference external" href="http://www.dans.knaw.nl/en">DANS</a></p>
+</div>
+<div class="section" id="literature">
+<h3>Literature<a class="headerlink" href="#literature" title="Permalink to this headline">¶</a></h3>
+<p id="lit1"><a class="reference external" href="https://code.google.com/p/git-core/">git-core</a></p>
+<p id="lit2">Swicegood, T. (2010) Pragmatic Guide To GIT</p>
+</div>
+</div>
+</div>
+
+
+          <footer>
+  
+    <div class="rst-footer-buttons">
+      
+        <a href="datamining.html" class="btn btn-neutral float-right" title="Data Mining"/>Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="index.html" class="btn btn-neutral" title="Recommender Systems"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <p>
+      &copy; Copyright 2013, Eko Indarto.
+  </p>
+
+  <a href="https://www.github.com/snide/sphinx_rtd_theme">Sphinx theme</a> provided by <a href="http://readthedocs.org">Read the Docs</a>
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+</body>
+</html>
