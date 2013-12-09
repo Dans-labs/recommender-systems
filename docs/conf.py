@@ -54,21 +54,21 @@ latex_elements = {
 }
 
 latex_documents = [
-  ('index', 'Recommender Systems.tex', u'Recommender Systems Documentation',
+  ('index', 'Recommender_Systems.tex', u'Recommender Systems Documentation',
    u'Eko Indarto', 'manual'),
 ]
 
 # -- Options for manual page output ---------------------------------------
 
 man_pages = [
-    ('index', 'Recommender Systems', u'Recommender Systems Documentation',
+    ('index', 'Recommender_Systems', u'Recommender Systems Documentation',
      [u'Eko Indarto'], 1)
 ]
 
 # -- Options for Texinfo output -------------------------------------------
 
 texinfo_documents = [
-  ('index', 'Recommender Systems', u'Recommender Systems Documentation',
+  ('index', 'Recommender_Systems', u'Recommender Systems Documentation',
    u'Eko Indarto', 'Recommender Systems', 'One line description of project_name.',
    'Miscellaneous'),
 ]
@@ -79,7 +79,7 @@ epub_title = u'Recommender Systems'
 epub_author = u'Eko Indarto'
 epub_publisher = u'Eko Indarto'
 epub_copyright = u'2013, Eko Indarto'
-epub_basename = u'Recommender Systems'
+epub_basename = u'Recommender_Systems'
 epub_theme = 'epub'
 epub_show_urls = 'footnote'
 epub_use_index = True
