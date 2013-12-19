@@ -1,5 +1,5 @@
-Recommender Systems
-===================
+Recommender Systems |version|
+=============================
 .. image:: /files/recommender-systems.png
 
 Contents:
